@@ -25,15 +25,11 @@ To install the necessary dependencies, you need to install the following Python 
 - `pandas` for data manipulation
 - `scikit-learn` for dataset splitting
 
-### ![Installation Image](path_to_installation_image.png)
-
 ## Step 2: Load and Preprocess the Dataset
 
 - The CIFAR-10 dataset is loaded and preprocessed, including splitting into training and validation sets.
 - Images are normalized to have pixel values between 0 and 1 for efficient model training.
 - A custom dataset class is created to handle the CIFAR-10 data using PyTorch’s `DataLoader` for batching.
-
-### ![Dataset Image](path_to_dataset_image.png)
 
 ## Step 3: Define the Models
 
@@ -44,9 +40,6 @@ To install the necessary dependencies, you need to install the following Python 
 - A VAE is a generative model designed to learn a latent space representation of the input data.
 - It consists of an encoder to compress input images and a decoder to reconstruct them, aiming for a smooth, continuous latent space.
 
-### ![CNN Architecture Image](path_to_cnn_architecture_image.png)
-### ![VAE Architecture Image](path_to_vae_architecture_image.png)
-
 ## Step 4: Define Training Components
 
 - **Loss Functions**:
@@ -56,24 +49,17 @@ To install the necessary dependencies, you need to install the following Python 
 - **Optimizers**:
   - The Adam optimizer is used for both models to minimize the respective loss functions.
 
-### ![Training Components Image](path_to_training_components_image.png)
-
 ## Step 5: Training Loop
 
 - The training loop trains both the CNN and VAE models for a specified number of epochs.
 - For the CNN, the model is trained to minimize classification loss. 
 - For the VAE, the model is trained to minimize the reconstruction loss (MSE) between the original and reconstructed images.
 
-### ![Training Loop Image](path_to_training_loop_image.png)
-
 ## Step 6: Compare Models
 
 - After training, the models are evaluated:
   - **CNN**: The model’s performance is assessed using the training and validation losses, and its classification accuracy is reported.
   - **VAE**: The reconstructed images from the VAE are compared to the original images to evaluate the model's ability to learn useful latent representations.
-
-### ![CNN Performance Image](path_to_cnn_performance_image.png)
-### ![VAE Reconstructed Images](path_to_vae_reconstructed_images.png)
 
 ## Conclusion
 
