@@ -16,6 +16,27 @@ This project applies machine learning concepts using the CIFAR-10 dataset. The g
    - Investigate different design choices and compare their performance.
    - Train and validate models effectively while visualizing the results.
 
+## Project Setup and Folder Structure
+Before running the project, follow these steps to properly set up the data directory:
+
+Download the CIFAR-10 CSV dataset
+Go to the [Kaggle](https://www.kaggle.com/datasets/fedesoriano/cifar10-python-in-csv?resource=download) CIFAR-10 CSV dataset and download the dataset.
+
+Create the following folder structure in your repo root:
+
+``` bash
+cifar10/
+├── train.csv
+├── test.csv
+└── images/
+    ├── frog.jpg
+    ├── airplane.jpg
+    └── ... (any test images you want to run through the model)
+```
+Place the downloaded CSV files (train.csv, test.csv) inside the `cifar10/` folder.
+
+Place any custom or example images for prediction inside the `cifar10/images/` folder.
+
 ## Step 1: Setup and Installation
 
 To install the necessary dependencies, you need to install the following Python libraries:
